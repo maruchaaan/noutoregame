@@ -23,6 +23,8 @@ import model.Quizz;
 public class QuizServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	// static int qcount = 0;
+	static int corcount = 0;
+	static int uncorcount = 0;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -85,8 +87,19 @@ public class QuizServlet extends HttpServlet {
 		// セッションスコープからクイズ情報を取得
 		HttpSession session = request.getSession();
 		QuizLibrary ql = (QuizLibrary) session.getAttribute("ql");
+		
+		String name = request.getParameter("name");
+		System.out.println(name);
+	
+		if(ql.getAnswer()==name) {
+			corcount++;
+		}else {
+			uncorcount++;
+		}
+		
+		
+		
 		ql.setQtimes(); // 0～9のうち次は何問目か(+1している)
-
 		// セッションスコープにインスタンスを保存
 		session.setAttribute("ql", ql);
 
@@ -97,9 +110,6 @@ public class QuizServlet extends HttpServlet {
 		}
 
 		// Quizz q = (Quizz) session.getAttribute("q");
-
-		String name = request.getParameter("name");
-		System.out.println(name);
 
 		// 0~9問目なら、次の問題
 		// フォワード
