@@ -5,10 +5,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>脳トレゲーム</title>
+<style type="text/css">
+body {
+background-image:url(/image/813_blackboard.png);
+background-position:center top;
+background-size:cover;
+}
+</style>
 </head>
 <body>
-<h1>結果画面</h1>
-<center>あなたのレベルは....</center>
-<>
+<h1>あなたの結果</h1>
+10問中、？問正解！！
+あなたのレベルは....
+<%
+%>
 </body>
 </html>
