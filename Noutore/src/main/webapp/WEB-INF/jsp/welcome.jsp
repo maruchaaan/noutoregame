@@ -14,13 +14,13 @@ background-size:cover;
 </style>
 </head>
 <body>
-<div style="text-align:center" >
-<br><br>
+<div style="text-align:center">
+<br><br><br><br>
 <br>
 <br>
 <h2>正解だと思う方の画像をクリックしてね。</h2>
 <p>問題は全部で10問！全問正解できるかな？</p>
-<form action="/QuizServlet" method="post">
+<form action="/QuizServlet" method="get">
  <input type="submit" value="START!!">
 </form>
  </div>
