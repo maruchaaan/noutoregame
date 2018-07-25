@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Quizz {
+public class Quizz implements Serializable {
 	private String qst; //問題文
 	private String qleft; //左の画像名
 	private String qright; //右の画像名

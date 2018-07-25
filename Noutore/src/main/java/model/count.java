@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class count {
+public class count implements Serializable{
 	private int qcount; //今何問目か
 	private ArrayList rndnumber;
 	private int corrcount; //今の正解数
