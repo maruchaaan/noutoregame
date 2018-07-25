@@ -29,12 +29,12 @@ background-size:cover;
 <form action="/QuizServlet" method="post" >
  <div style="float:left; margin:50px 110px; text-align:center">
  <button type="submit" name="name" value="<%= q.getqLeft() %>">
- <img src="/image/<%= q.getqLeft() %>" alt="ひだり" style="border:solid 2px" >
+ <img src="/image/<%= q.getqLeft() %>" alt="ひだり" width="200" height="200" style="border:solid 2px" >
  </button>
  </div>
  <div style="float:left; margin:50px 20px;">
  <button type="submit" name="name" value="<%= q.getqRight() %>">
- <img src="/image/<%= q.getqRight() %>" alt="みぎ" style="border:solid 2px" >
+ <img src="/image/<%= q.getqRight() %>" alt="みぎ" width="200" height="200" style="border:solid 2px" >
  </button>
  </div>
  <br clear="both"/>

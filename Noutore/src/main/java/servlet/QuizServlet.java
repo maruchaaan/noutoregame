@@ -63,6 +63,7 @@ public class QuizServlet extends HttpServlet implements Serializable {
 
 		// セッションスコープにインスタンスを保存
 		HttpSession session = request.getSession();
+		
 		session.setAttribute("q", q);
 
 		session.setAttribute("c", c);
