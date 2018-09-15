@@ -40,8 +40,8 @@ body {
 		<h1>もはや天才、仙人レベル</h1>
 		<p><img src="/image/sennin.png" alt="sennnin" width="130" height="130"></p>
 		<% } %>
-		<form action="/WelcomeServlet" method="post">
-			<input type="submit" value="もう一度挑戦する">
+		<form action="/WelcomeServlet2" method="post">
+			<input type="submit" value="トップに戻る">
 		</form>
 	</div>
 </body>
